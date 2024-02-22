@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/favicon.png" type="image/x-icon">
+    <title>Cadastro - Shark Lovers</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        .conteiner {
+            height: 110vh;
+        }
+
+        .principal {
+            height: 90vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setinha">
+        <a href="login.html">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+        </a>
+    </div>
+    <div class="conteiner">
+        <div class="principal">
+            <div class="login">
+                <h1>Cadastre-se</h1>
+            </div>
+            <form action="login.html">
+                <table>
+                    <tr>
+                        <td>
+                            <p class="pergunta">Digite seu nome completo : </p>
+                        </td>
+                        <td> <input type="text" placeholder="Ex: Paulo Vinicius Coelho" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="pergunta">Data de Nascimento:</p>
+                        </td>
+                        <td> <input type="date" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p class="pergunta">Informe seu CPF:</p>
+                        </td>
+                        <td> <input type="text" placeholder="999.999.999-99" maxlength="14" minlength="11" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="pergunta">E-mail:</p>
+                        </td>
+                        <td> <input type="email" placeholder="Ex: email@exemplo.com" required >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="pergunta">Senha: </p>
+                        </td>
+                        <td> <input type="password" placeholder="Insira sua senha" maxlength="15" minlength="8"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ><input type="checkbox" id="termo"></td>
+                        <td >
+                            <p>Aceitar <a href="../termos.html" target="_blank">Termos de Uso e Condições</a></p>
+                        </td>
+                    </tr>
+
+
+                </table>
+
+                <button type="submit" id="btn" class="btn" disabled>Criar seu Cadastro</button>
+            </form>
+
+        </div>
+    </div>
+    <script src="cadastro.js"></script>
+    <script src="https://kit.fontawesome.com/bf19b5ff3e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

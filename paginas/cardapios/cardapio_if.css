@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(to top left, #1f0cb6,#5272ff) no-repeat;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.cardapio{
+    position: relative;
+    background-color: #14058f;
+    height: 90%;
+    width: 30%;
+    border: 3px solid white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.info{
+    height: 90%;
+    width: 90%;
+    background-color: #fef5e8;
+    margin-top: -5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.info-info{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.direita{
+    height: 100%;
+    width: 47.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.direitinha{
+    margin-top: -5vh;
+    height: 60%;
+    width: 100%;
+
+}
+
+.esquerda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 47.5%;
+}
+.esquerdinha{
+    height: 65%;
+    width: 100%;
+}
+.onda{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.planta{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    z-index: 5;
+    bottom: 0;
+}
+.caranguejo{
+    width: 30vh;  
+    z-index: 50;
+    margin-top: -20vh;
+}
+.tubarao{
+    margin-top: -40px;
+    margin-right: -15px;
+    width: 200px;
+}
+.titulo{
+    width: 200px;
+}
+
+
+
+td,tr{
+    text-align: left;
+    font-size: .9vh;
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    font-weight: 900;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+td{
+    height: 20px;
+    border-bottom: 1px solid #d4d4ab;
+}
+#titulo{
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: -5px;
+    margin-top: 3px;
+}
+.t1{
+    letter-spacing: -1px;
+    color: #2d9644;
+    font-weight: 800;
+}
+.t2{
+    color: #f8ad02;
+}
+.t3{
+    color: #ed5957;
+}
+span{
+    margin-bottom: -15px;
+    font-size: 6px;
+    font-weight: lighter;
+}

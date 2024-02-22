@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/favicon.png" type="image/x-icon">
+    <title>Login - Shark Lovers</title>
+    <style>
+        body {
+            overflow: hidden;
+            height: 110vh;
+        }
+    </style>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="setinha">
+        <a href="../../index.html">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+        </a>
+    </div>
+    <div class="conteiner">
+        <div class="principal">
+            <div class="login">
+                <h1>Login</h1>
+            </div>
+            <form action="../../index.html" class="login__form">
+                <table>
+                    <tr>
+                        <td>
+                            <p class="pergunta">Usuário:</p>
+                        </td>
+                        <td> <input type="text" placeholder="Digite seu nickname" class="login__input"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="pergunta">Senha:</p>
+                        </td>
+                        <td> <input type="password" placeholder="Insira sua senha" maxlength="15" size="20"
+                                minlength="8" required>
+                        </td>
+                    </tr>
+                </table>
+                <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+                <button type="submit" id="btn" class="login__buttom">Prosseguir</button>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        const imput = document.querySelector('.login__input');
+        const button = document.querySelector('.login__buttom');
+        const form = document.querySelector('.login__form');
+
+        const handleSubmit = (event) => {
+            localStorage.setItem('usuario', imput.value);
+            localStorage.setItem('comprimento', 'obrigado pela sua presença,');
+            window.location = 'cadastro.html';
+        }
+        form.addEventListener('submit', handleSubmit);
+    </script>
+    <script src="https://kit.fontawesome.com/bf19b5ff3e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

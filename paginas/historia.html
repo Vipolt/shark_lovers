@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <title>História - Shark Lovers </title>
+    <link rel="stylesheet" href="historia.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="conteiner">
+            <div class="mobile-menu">
+                <div class="line_1"></div>
+                <div class="line_2"></div>
+                <div class="line_3"></div>
+            </div>
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <div class="alinhamento"></div>
+            <div class="alinhamento"></div>
+            <img src="../imagens/logoteste.png" alt="" class="logo">
+
+            <ul class="nav-list">
+
+                <a href="cardapios.html">
+                    <li>Cardápios</li>
+                </a>
+                <a href="apoiadores.html">
+                    <li>Apoiadores</li>
+                </a>
+
+                <a href="../paginas/creditos.html">
+                    <li>Criadores</li>
+                </a>
+
+            </ul>
+        </div>
+    </div>
+    <div class="papai">
+        <div class="um">
+            <div class="img">
+                <img src="../imagens/restaurante.png" alt="">
+            </div>
+            <p>Tudo começa com uma turma do curso técnico de Desenvolvimento de Sistemas da Etec de Poá; onde um grupo
+                de TCC
+                foi formado. Esse grupo era formado por integrantes que haviam acabado de finalizar projetos muito
+                grandes;
+                conhecidos como Vipo Education e Bolt. Após o término desses projetos, em comum acordo, decidiram se
+                juntar para
+                formar a histórica União Vibolt.
+                Algum tempo depois da formatura, os membros da União Vibolt se reencontraram e estavam determinados a
+                realizar
+                outro projeto juntos, já que o último havia sido bem-sucedido. A ideia era criar um restaurante de
+                culinária
+                marinha totalmente pela internet, chamado Shark Lovers; em homenagem à obra musical de GR6 Explode e
+                pelo amor
+                que todos sentiam por tubarões.
+            </p>
+            <img src="../imagens/tubaraozinho.png" alt="" class="tub">
+        </div>
+        <div class="dois">
+
+            <p>
+                O grupo encontrou alguns problemas pelo caminho, mas ao fim de alguns meses, o restaurante online estava
+                finalmente em fase final. O marketing da empresa estava dando muito certo, tanto que, não muito tempo
+                depois do
+                término do site, a equipe conseguiu investidores e forncedores de vários lugares.
+                O négocio foi muito bem e a equipe decidiu abrir um restaurante físico na cidade de Poá, contratando
+                mais
+                funcionários para a empresa e conseguindo atender um número maior de pessoas. Tentando sempre dar a
+                melhor
+                experiência ao cliente, tanto o lado de fora quanto o lado de dentro do estabelecimento tinham a
+                temática do
+                fundo do mar; também, os funcionários usavam uma caracterização de tubarão.
+                Após 10 anos, a empresa se tornou uma das maiores do ramo e possui diversas filiais em vários países
+                diferentes.
+            </p>
+            <div class="img2">
+                <img src="../imagens/comida.png" alt="">
+            </div>
+            <img src="../imagens/peixista.png" alt="" class="car">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bf19b5ff3e.js" crossorigin="anonymous"></script>
+    <script>
+        class MobileNavbar {
+            constructor(mobileMenu, navList, navLinks) {
+                this.mobileMenu = document.querySelector(mobileMenu);
+                this.navList = document.querySelector(navList);
+                this.navLinks = document.querySelectorAll(navLinks);
+                this.activeClass = "active";
+                this.handleClick = this.handleClick.bind(this);
+            }
+
+
+            //animação dos links
+
+            //aqui index se refere a primeira posição no indice
+            animateLinks() {
+                this.navLinks.forEach((link, index) => {
+                    link.style.animation
+                        ? (link.style.animation = "")
+                        : (link.style.animation = `navLinkFade 1s ease forwards ${index / 7 + 0.3}s`);
+                    /*este calculo esta servindo para adicionar um delay diferente para cada link, transformando o index 
+                    em milisegundos*/
+                })
+            }
+            addClickEvent() {
+                this.mobileMenu.addEventListener("click", this.handleClick);
+            }
+
+            handleClick() {
+                this.navList.classList.toggle(this.activeClass);
+                this.mobileMenu.classList.toggle(this.activeClass);
+                this.animateLinks();
+            }
+
+            init() {
+                if (this.mobileMenu) {
+                    this.addClickEvent();
+                }
+                return this;
+            }
+        }
+        const mobileNavbar = new MobileNavbar(
+            ".mobile-menu",
+            ".nav-list",
+            ".nav-list li",
+        );
+
+        mobileNavbar.init();
+
+    </script>
+
+</body>
+
+</html>
