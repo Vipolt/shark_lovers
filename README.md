@@ -7,9 +7,12 @@
 <img src="https://github.com/Vipolt/shark_lovers/assets/158237204/ca88586e-f85b-43d5-a185-63b2df932620" width="250">
 <img src="https://github.com/Vipolt/shark_lovers/assets/158237204/3c379c6c-9de9-494d-8fd0-5119b3804954" width="250">
 <img src="https://github.com/Vipolt/shark_lovers/assets/158237204/cd95c6dc-7516-4859-9979-8a8bd2c51841" width="250">
+<img src="https://github.com/Vipolt/shark_lovers/assets/158237204/9707fcca-8398-4393-948b-f1d2e1a3a952" width="250">
+<img src="https://github.com/Vipolt/shark_lovers/assets/158237204/ed06dec8-290b-4707-b848-2f2a7839078e" width="250">
 <img src="https://github.com/Vipolt/shark_lovers/assets/158237204/569ba160-f6ef-46f7-bf30-d7d5fd57c4ea" width="250">
 <img src="https://github.com/Vipolt/shark_lovers/assets/158237204/1ddf9089-9900-47ca-ab4b-9c8e1172df90" width="250">
 <img src="https://github.com/Vipolt/shark_lovers/assets/158237204/15a86691-1666-40c5-885d-0f4712f9dc0d" width="250">
+
 
 ## 📃 Páginas
 - Landing Page
