@@ -73,7 +73,6 @@ a {
     border-bottom-right-radius: 10px;
 }
 
-
 .nav-list.active {
     transform: translateX(0);
 }
@@ -128,7 +127,7 @@ a {
 }
 
 .logo {
-    width: 7.5%;
+    width: 75px;
 }
 
 .login {
