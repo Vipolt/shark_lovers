@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="shortcut icon" href="../../imagens/icones/favicon.png" type="image/x-icon">
     <title>Login - Shark Lovers</title>
     <style>
         body {
@@ -18,7 +19,7 @@
 
 <body>
     <div class="setinha">
-        <a href="../../index.html">
+        <a href="../../../index.html">
             <i class="fa-solid fa-circle-arrow-left"></i>
         </a>
     </div>
@@ -27,7 +28,7 @@
             <div class="login">
                 <h1>Login</h1>
             </div>
-            <form action="../../index.html" class="login__form">
+            <form action="../../../index.html" class="login__form">
                 <table>
                     <tr>
                         <td>
@@ -50,19 +51,11 @@
 
         </div>
     </div>
-    <script>
-        const imput = document.querySelector('.login__input');
-        const button = document.querySelector('.login__buttom');
-        const form = document.querySelector('.login__form');
 
-        const handleSubmit = (event) => {
-            localStorage.setItem('usuario', imput.value);
-            localStorage.setItem('comprimento', 'obrigado pela sua presença,');
-            window.location = 'cadastro.html';
-        }
-        form.addEventListener('submit', handleSubmit);
-    </script>
+    <!-- js -->
     <script src="https://kit.fontawesome.com/bf19b5ff3e.js" crossorigin="anonymous"></script>
-</body>
 
+    <script src="../../js/login.js"></script>
+
+</body>
 </html>

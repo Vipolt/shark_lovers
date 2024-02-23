@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shark Lovers</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/imagens/icones/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -21,30 +21,31 @@
                 <div class="line_3"></div>
             </div>
 
-            <a href="paginas/cadastro/login.html" class="login">Login</a>
+            <a href="assets/paginas/cadastro/login.html" class="login">Login</a>
             <div class="alinhamento"></div>
             <div class="alinhamento"></div>
-            <img src="imagens/logoteste.png" alt="" class="logo">
+            <img src="assets/imagens/icones/logo.png" alt="" class="logo">
 
             <ul class="nav-list">
-                <a href="paginas/historia.html">
+                <a href="assets/paginas/historia.html">
                     <li>História</li>
                 </a>
-                <a href="paginas/cardapios.html">
+                <a href="assets/paginas/cardapios.html">
                     <li>Cardápios</li>
                 </a>
 
-                <a href="paginas/apoiadores.html">
+                <a href="assets/paginas/apoiadores.html">
                     <li>Apoiadores</li>
                 </a>
 
-                <a href="paginas/creditos.html">
+                <a href="assets/paginas/creditos.html">
                     <li>Criadores</li>
                 </a>
 
             </ul>
         </div>
     </div>
+
     <div class="principal">
         <div class="text">
             <br>
@@ -73,22 +74,23 @@
                 </div>
 
                 <div class="imagens" id="atual">
-                    <img src="imagens/IMG-20221203-WA0012.jpg" alt="">
+                    <img src="assets/imagens/IMG-20221203-WA0012.jpg" alt="">
                 </div>
                 <div class="imagens">
-                    <img src="imagens/IMG-20221203-WA0013.jpg" alt="">
+                    <img src="assets/imagens/IMG-20221203-WA0013.jpg" alt="">
                 </div>
                 <div class="imagens">
-                    <img src="imagens/IMG-20221203-WA0014.jpg" alt="">
+                    <img src="assets/imagens/IMG-20221203-WA0014.jpg" alt="">
                 </div>
                 <div class="imagens">
-                    <img src="imagens/IMG-20221203-WA0015.jpg" alt="">
+                    <img src="assets/imagens/IMG-20221203-WA0015.jpg" alt="">
                 </div>
             </div>
             <div class="bolinhas">
             </div>
         </div>
     </div>
+
     <div class="area">
         <ul class="circles">
             <li>
@@ -123,10 +125,11 @@
             </li>
         </ul>
     </div>
+
     <div class="rodape">
         <div class="conteinere">
             <div class="alinhamentos">
-                <a href="paginas/termos.html" target="_blank">
+                <a href="assets/paginas/termos.html" target="_blank">
                     <p>
                         Termos de Uso e Condições
                     </p>
@@ -134,21 +137,16 @@
 
             </div>
         </div>
-        <p>
-            
-            <a href="https://www.instagram.com/shark_lodft/" target="_blank" style="color: white;"> Todos os Direitos Reservados - @shark_lodft - © 2022, SharkLovers.com </a>
-            
-        </p>
+
+        <p><a href="https://www.instagram.com/shark_lodft/" target="_blank" style="color: white;"> Todos os Direitos Reservados - @shark_lodft - © 2022, SharkLovers.com </a></p>
+    
     </div>
-
-
-
-
-
 
     <!--js-->
     <script src="https://kit.fontawesome.com/bf19b5ff3e.js" crossorigin="anonymous"></script>
+    
     <script>
+
         const spanPlayer = document.querySelector('.usuario');
         const preto = document.querySelector('.canafistula');
 
@@ -157,56 +155,11 @@
             preto.innerHTML = localStorage.getItem('comprimento');
         }
 
-        class MobileNavbar {
-            constructor(mobileMenu, navList, navLinks) {
-                this.mobileMenu = document.querySelector(mobileMenu);
-                this.navList = document.querySelector(navList);
-                this.navLinks = document.querySelectorAll(navLinks);
-                this.activeClass = "active";
-                this.handleClick = this.handleClick.bind(this);
-            }
-
-
-            //animação dos links
-
-            //aqui index se refere a primeira posição no indice
-            animateLinks() {
-                this.navLinks.forEach((link, index) => {
-                    link.style.animation
-                        ? (link.style.animation = "")
-                        : (link.style.animation = `navLinkFade 1s ease forwards ${index / 7 + 0.3}s`);
-                    /*este calculo esta servindo para adicionar um delay diferente para cada link, transformando o index 
-                    em milisegundos*/
-                })
-            }
-            addClickEvent() {
-                this.mobileMenu.addEventListener("click", this.handleClick);
-            }
-
-            handleClick() {
-                this.navList.classList.toggle(this.activeClass);
-                this.mobileMenu.classList.toggle(this.activeClass);
-                this.animateLinks();
-            }
-
-            init() {
-                if (this.mobileMenu) {
-                    this.addClickEvent();
-                }
-                return this;
-            }
-        }
-        const mobileNavbar = new MobileNavbar(
-            ".mobile-menu",
-            ".nav-list",
-            ".nav-list li",
-        );
-
-        mobileNavbar.init();
-
     </script>
-    <script src="home.js"></script>
+
+    <script src="assets/js/navbar.js"></script>
+
+    <script src="assets/js/home.js"></script>
 
 </body>
-
 </html>
